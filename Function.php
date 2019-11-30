@@ -38,6 +38,7 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/slicknav.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="database.php">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
@@ -149,28 +150,34 @@
 							</tr>
 						</thead>
 						<?php  
-						require_once './database.php';
-							foreach ($resultSet as $row) {
-								?>
-								<tr>
-									<th class="column1"><?= $row['name'] ?></th>
-									<th class="column2"><?= $row['price'] ?></th>
-									<th class="column3"><?= $row['content'] ?></th>
-									<th class="column4">
-										<a href="Delete.php?id=<?= $row['id'] ?>">Delete</a>
-									</th>
-			
-									<th class="column5">
-										<a href="EditProduct.php?id=<?= $row['id'] ?>">Edit</a>
-									</th>
-			
-									<th class="column6">
-										<a href="./product_editing.php?id=<?= $row['id'] ?>&task=copy">Copy</a>
-									</th>
-									<div class="clear-both"></div>  
-								</tr>
-								
-							<?php } ?>
+                        require_once './database.php';
+                                $sql = "Select * from account";
+                                $rows = query($sql);
+                                for($i=0; $i<count($rows); $i++)
+                                {
+                                    ?>
+                                    <div>
+                                        <tr>
+                                                <th class="column1"><?= $rows[$i][1] ?></th>
+                                                <th class="column2"><?= $rows[$i][2] ?></th>
+                                                <th class="column3"><?= $rows[$i][3] ?></th>
+                                                <th class="column4">
+                                                    <a><?= $rows[$i][4] ?></a>
+                                                </th>
+                        
+                                                <th class="column5">
+                                                    <a><?= $rows[$i][5] ?></a>
+                                                </th>
+                        
+                                                <th class="column6">
+                                                    <a ><?= $rows[$i][6] ?></a>
+                                                </th>
+                                                <div class="clear-both"></div>  
+                                            </tr>
+                                    </div>
+                            <?php 
+                             }
+                        ?>
 					</table>
 				</div>
 			</div>
