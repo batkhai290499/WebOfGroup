@@ -64,7 +64,7 @@
                                                 <li><a href="single-blog.html">single-blog</a></li>
                                             </ul>
                                         </li> -->
-                                        <li><a href="">Information</a></li>
+                                        <li><a href="function.php">Information</a></li>
                                     </ul>
                                 </nav>
                             </div>

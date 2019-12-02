@@ -137,16 +137,16 @@
 			<div class="wrap-table100">
 				<div class="table100">
 				<h2 data-aos="fade-left">LIST PRODUCT</h2>
-				<a href="AddProduct.php">Click to Add</a>
+				<a href="addteacher.php">Click to Add</a>
 					<table>
 						<thead>
 							<tr class="table100-head">
 								<th class="column1">Name of Teacher</th>
 								<th class="column2">Class</th>
-								<th class="column3">Lesson</th>
-								<th class="column4">Delete</th>
-								<th class="column5">Edit</th>
-								<th class="column6">Something</th>
+								<th class="column3">Role</th>
+								<th class="column4">Class</th>
+								<th class="column5">Description</th>
+								<th class="column6">Course</th>
 							</tr>
 						</thead>
 						<?php  
