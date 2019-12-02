@@ -64,14 +64,14 @@
                                                 <li><a href="single-blog.html">single-blog</a></li>
                                             </ul>
                                         </li> -->
-                                        <li><a href="function.php">Information</a></li>
+                                        <li><a href="admin.php">Information</a></li>
                                     </ul>
                                 </nav>
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                             <div class="log_chat_area d-flex align-items-center">
-                                <a href="indexLogin.html" class="">
+                                <a href="login.php" class="">
                                     <i class="flaticon-user"></i>
                                     <span>log in</span>
                                 </a>

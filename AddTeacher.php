@@ -1,3 +1,4 @@
+			
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,44 +29,44 @@
 			<div class="wrap-table100">
 				<div class="table100">
 				<h2>LIST PRODUCT</h2>
-                    <form action="Add.php" method="post">
+                    <form action="functionadd.php" method="post">
                         <table width="50%" border="10">
                             <tr>
                                 <td>ID</td>
-                                <td><input type="num" name ="txtId"></td>
+                                <td><input type="num" name ="accountID"></td>
                             </tr>
 
                             <tr>
                                 <td>Name Account of Teacher</td>
-                                <td><input type="text" name ="txtusername"></td>
+                                <td><input type="text" name ="username"></td>
                             </tr>
 
                             <tr>
                                 <td>Password</td>
-                                <td><input type="text" name ="txtpassword"></td>
+                                <td><input type="text" name ="password"></td>
                             </tr>
 
                             <tr>
                                 <td>Role</td>
-                                <td><input type="text" name ="txtroleID"></td>
+                                <td><input type="text" name ="roleID"></td>
                             </tr>
 
                             <tr>
                                 <td>Class</td>
-                                <td><input type="text" name ="txtclassID"></td>
+                                <td><input type="text" name ="classID"></td>
 							</tr>
 							
 							<tr>
                                 <td>Description</td>
-                                <td><input type="text" name ="txtDescription"></td>
+                                <td><input type="text" name ="Description"></td>
 							</tr>
 							<tr>
                                 <td>Course</td>
-                                <td><input type="text" name ="txtcourseID"></td>
+                                <td><input type="text" name ="courseID"></td>
                             </tr>
                             <tr>
                                 <td></td>
-                                <td><input type="submit" name="Register"></td>
+                                <td><input type="submit" name="submit"></td>
                             </tr>
 						</table>
 					</form>
