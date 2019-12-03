@@ -1,7 +1,13 @@
 <?php 
-				require("db1.php");  
+	$sever = 'localhost';
+	$server_user = 'root';
+	$database = 'webofgroup';
+	$server_pass = '';
+	$connect = mysqli_connect($sever, $server_user, $server_pass, $database);
+				require("database.php");  
 				if(isset($_POST["submit"]))
 					{
+						
 						$id = $_POST["accountID"];
 						$user = $_POST["username"];
 						$password = $_POST["password"];

@@ -11,6 +11,7 @@ function query ($sql)
 	global $password;
 	global $dbname;
 	$conn = new mysqli($hostname, $username, $password, $dbname);
+	
 	if($conn -> connect_error)
 	{
 		//nếu như kết nối ko thành công thì dừng chương trình
