@@ -28,8 +28,8 @@
 		<div class="container-table100">
 			<div class="wrap-table100">
 				<div class="table100">
-				<h2>ADD TEACHER</h2>
-                    <form action="functionadd.php" method="post">
+				<h2>EDIT TEACHER</h2>
+                    <form action="functionedit.php" method="post">
                         <table width="50%" border="10">
                             <tr>
                                 <td>ID</td>

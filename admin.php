@@ -136,8 +136,8 @@
 		<div class="container-table100">
 			<div class="wrap-table100">
 				<div class="table100">
-				<h2 data-aos="fade-left">LIST PRODUCT</h2>
-				<a href="addteacher.php">Click to Add</a>
+				<h2 data-aos="fade-left">LIST TEACHER</h2>
+				<h3><a href="addteacher.php">Click to Add Teacher</a></h3>
 					<table>
 						<thead>
 							<tr class="table100-head">
@@ -147,6 +147,8 @@
 								<th class="column4">Class</th>
 								<th class="column5">Description</th>
 								<th class="column6">Course</th>
+                                <th class="column7"><a href="functionedit.php">Edit</a></th>
+                                <th class="column8"><a href="functiondelete.php">Delete</a></th>
 							</tr>
 						</thead>
 						<?php  
@@ -172,6 +174,8 @@
                                                 <th class="column6">
                                                     <a ><?= $rows[$i][6] ?></a>
                                                 </th>
+                                                <th class="column7"><a href="editteacher.php">Edit</a></th>
+                                                <th class="column8"><a href="functiondelete.php?id=<?= $rows[$i][0] ?>" name="delete">Delete</a></th>
                                                 <div class="clear-both"></div>  
                                             </tr>
                                     </div>
