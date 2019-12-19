@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Student's Course Management</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  * {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: ##000000;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 5px;
+  margin-top: 8px;
+  font-size: 15px;
+  border: none;
+  color: white;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 45px;
+  bottom: 0;
+  height: inherit;
+
+}
+
+/* unvisited link */
+a:link {
+  color: white;
+}
+
+</style>
+<body>
+
+<!-- Navigation bar -->
+<div class="topnav">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="Main.php" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Home</a>
+    <a href="Course.php" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Course</a>
+    <a href="Class.php" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Class</a>
+    <a href="Login.php" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Logout</a>
+
+    <div class="search-container">
+    <form action="/search.php">
+      <input type="text" placeholder="Search course.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <div class="w3-sidebar w3-bar-block w3-black">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-white w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b> Your Course</b></h4>
+ <a href="default.asp" target="_blank">1641 - Business Intelligent</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Course description</h1>
+      <p>Data and information is core to any organisation and business process. The necessity of having meaningful information is the key driver for effective decision- making and problem-solving. Business intelligence has evolved from technologies such as decision support systems (DSS) to include tools and methods associated with data mining, data integration, data quality and data warehousing in conjunction with other information management systems and applications.
+
+This unit introduces students to a range of tools, techniques and technologies for acquiring data and processing this into meaningful information that can be used to support business functions and processes.
+
+Within this unit students will examine the concept of business processing in terms of data capture, conversion and information output. Students will also be required to define the tools and technologies associated with business intelligence functionality. The use of a business intelligence tool/s and techniques is also required to demonstrate an understanding of a given problem. Finally, students will be expected to evaluate the impact of business intelligence for effective decision-making.
+
+On successful completion of this unit students will be able to appreciate the importance of business intelligence in terms of optimising decision-making and performance. By exploring the tools, techniques and systems that support business intelligence students will have an awareness of the role and contribution that these technologies and methodologies have and their importance to organisations.
+
+As a result students will develop skills such as communication literacy, critical thinking, analysis, reasoning and interpretation, which are crucial for gaining employment and developing academic competence.
+  
+<p> II. Learning Outcomes
+<p>By the end of this unit students will be able to:
+
+<p>LO1. Discuss business processes and the mechanisms used to support business decision-making. </p> 
+<p>LO2. Compare the tools and technologies associated with business intelligence functionality. </p> 
+<p>LO3. Demonstrate the use of business intelligence tools and technologies.  </p> 
+<p>LO4. Discuss the impact of business intelligence tools and technologies for effective decision-making purposes and the legal/regulatory context in which they are used. </p>
+
+<p>III. Resources & Materials
+
+<p>https://drive.google.com/open?id=1vzFdLePzMD1lBkMJw_nauVYq_3wLwuJp</p>
+    </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div>
+  <br>
+<br>
+<br>
+<br>
+<br>
+  </div>
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
