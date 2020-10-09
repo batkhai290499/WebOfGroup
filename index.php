@@ -49,7 +49,7 @@
                             <div class="main-menu  d-none d-lg-block">
                                 <nav>
                                     <ul id="navigation">
-                                        <li><a class="active" href="index.html">home</a></li>
+                                        <li><a class="active" href="index.html">homeeee</a></li>
                                         <li><a href="">Category</a></li>
                                         <!-- <li><a href="">pages <i class="ti-angle-down"></i></a>
                                             <ul class="submenu">
