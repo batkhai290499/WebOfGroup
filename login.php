@@ -68,7 +68,7 @@
 						</span>
 
 						<a class="txt2" href="#">
-							Sign Upppp123
+							Sign Uppp456
 						</a>
 					</div>
 				</form>
